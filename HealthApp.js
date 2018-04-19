@@ -3,7 +3,7 @@ var button = document.getElementById('mHRandRHR');
 var age = document.getElementById('inputAge').value;
 var pulse = document.getElementById('inputPulse').value;
 
-var rHR = resting(age);
+var rHR = resting(pulse);
 
 function everything() {
     document.getElementById("results").textContent = "Your resting heart rate is " + present + "."

@@ -1,13 +1,17 @@
 var button = document.getElementById('mHRandRHR');
-button.addEventListener('click', rhmANDmhr);
 
-function rhmANDmhr() {
-    var rHR = getRHR(values);
-    document.getElementById("results").textContent = "Your Resting Heart Rate is " + resting + "."
+var age = document.getElementById('inputAge').value;
+var pulse = document.getElementById('inputPulse').value;
+
+var rHR = resting(age);
+
+function everything() {
+    document.getElementById("results").textContent = "Your resting heart rate is " + present + "."
 }
 
-function getRHR(values) {
-    var inputHR = document.getElementById('inputPulse').value;
-    resting = ( inputHR * 10);
-    return resting;
+function resting(rHR) {
+    present = (rHR * 10);
+    return present;
 }
+
+button.addEventListener('click', everything);

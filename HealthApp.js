@@ -1,11 +1,11 @@
 var button = document.getElementById('zones');
 
 function everything() {
-    var rHR = resting(pulse);
-    var mHR = maximum(age);
-
     var age = document.getElementById('inputAge').value;
     var pulse = document.getElementById('inputPulse').value;
+
+    var rHR = resting(pulse);
+    var mHR = maximum(age);
 
     document.getElementById("results").textContent = "Your resting heart rate is " + present + " beats per minute. Your Maximum Heart Rate is " + later + "."
 }

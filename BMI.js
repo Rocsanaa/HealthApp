@@ -9,7 +9,8 @@ function final() {
 }
 
 function fttometers() {
-
+ meters = height / 0.3048;
+    return meters;
 }
 
 function poundstokg() {

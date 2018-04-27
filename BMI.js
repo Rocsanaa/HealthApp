@@ -7,7 +7,7 @@ function final() {
     var first = poundstokg(pounds);
     var second = fttometers(feet);
 
-    document.getElementById("product").textContent = "Your BMI score is " + kg + ". Your BMI category is " + meters + "."
+    document.getElementById("product").textContent = "Your weight in kg is " + kg + ". Your height in meters is " + meters + "."
 }
 
 function poundstokg(first) {

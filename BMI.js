@@ -1,13 +1,13 @@
-var button2 = document2.getElementById('bmi');
+var button2 = document.getElementById('bmi');
+
+    var feet = document.getElementById('inputft').value;
+    var pounds = document.getElementById('inputW').value;
 
 function final() {
-    var feet = document2.getElementById('inputft').value;
-    var pounds = document2.getElementById('inputW').value;
-
     var first = poundstokg(pounds);
     var second = fttometers(feet);
 
-    document2.getElementById("product").textContent = "Your BMI score is " +  + ". Your BMI category is " +  + "."
+    document.getElementById("product").textContent = "Your BMI score is " + kg + ". Your BMI category is " + meters + "."
 }
 
 function poundstokg(first) {

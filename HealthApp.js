@@ -64,18 +64,14 @@ button2.addEventListener('click', everything);
 var button3 = document.getElementById('levels');
 
 function phase() {
-    var zone1a = Math.floor(later * 0.5);
-    var zone1b = Math.floor(later * 0.6);
-    var zone2a = Math.floor(later * 0.6);
-    var zone2b = Math.floor(later * 0.7);
-    var zone3a = Math.floor(later * 0.7);
-    var zone3b = Math.floor(later * 0.8);
-    var zone4a = Math.floor(later * 0.8);
-    var zone4b = Math.floor(later * 0.9);
-    var zone5a = Math.floor(later * 0.9);
-    var zone5b = Math.floor(later * 1.0);
+    var zone1 = Math.floor(later * 0.5);
+    var zone12 = Math.floor(later * 0.6);
+    var zone23 = Math.floor(later * 0.7);
+    var zone34 = Math.floor(later * 0.8);
+    var zone45 = Math.floor(later * 0.9);
+    var zone5 = Math.floor(later * 1.0);
 
-    document.getElementById("triple").textContent = "Zone 1: " + zone1a + " - " + zone1b + " BPM. Zone 2: " + zone2a + " - " + zone2b + " BPM. Zone 3: " + zone3a + " - " + zone3b + " BPM. Zone 4: " + zone4a + " - " + zone4b + " BPM. Zone 5: " + zone5a + " - " + zone5b + " BPM."
+    document.getElementById("triple").textContent = "Zone 1: " + zone1 + " - " + zone12 + " BPM. Zone 2: " + zone12 + " - " + zone23 + " BPM. Zone 3: " + zone23 + " - " + zone34 + " BPM. Zone 4: " + zone34 + " - " + zone45 + " BPM. Zone 5: " + zone45 + " - " + zone5 + " BPM."
 
 }
 
